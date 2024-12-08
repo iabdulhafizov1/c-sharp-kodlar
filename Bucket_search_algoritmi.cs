@@ -16,6 +16,7 @@ class BucketSort
         }
         int bucketCount = (int)Math.Sqrt(array.Length);
         int range = (maxValue - minValue) / bucketCount + 1;
+        
         // Bucketlarni yaratish
         List<int>[] buckets = new List<int>[bucketCount];
         for (int i = 0; i < bucketCount; i++)
@@ -71,7 +72,7 @@ class BucketSort
     public static void Main(string[] args)
     {
         int[] array = { 12, 3, 21, 22, 32, 1, 31 };
-        Console.WriteLine("Dastlabkimassi:");
+        Console.WriteLine("Dastlabki massi:");
         PrintArray(array);
         Sort(array);
         Console.WriteLine("Tartiblangan massiv:");
